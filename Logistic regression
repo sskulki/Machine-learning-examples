@@ -209,3 +209,31 @@ for (i in 1:length(pred)){
 
 table(cpred, testing$income)
 confusionMatrix(table(cpred, testing$income))
+
+
+#Output : accuract is not great using logistic regression
+Confusion Matrix and Statistics
+
+      
+cpred  High  Low
+  High  816 5259
+  Low  1066  400
+                                         
+               Accuracy : 0.1613         
+                 95% CI : (0.153, 0.1697)
+    No Information Rate : 0.7504         
+    P-Value [Acc > NIR] : 1              
+                                         
+                  Kappa : -0.2843        
+ Mcnemar's Test P-Value : <2e-16         
+                                         
+            Sensitivity : 0.43358        
+            Specificity : 0.07068        
+         Pos Pred Value : 0.13432        
+         Neg Pred Value : 0.27285        
+             Prevalence : 0.24957        
+         Detection Rate : 0.10821        
+   Detection Prevalence : 0.80560        
+      Balanced Accuracy : 0.25213        
+                                         
+       'Positive' Class : High  
